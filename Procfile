@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Flask_deploy.py
+web: sh setup.sh && streamlit run app.py
