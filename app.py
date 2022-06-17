@@ -45,7 +45,7 @@ def main():
     NGI = st.number_input('(in Trillion cubic feet)')
     
     if st.button('Predict Natural Gas Price'):
-        output= classify(Pc,SEX,AGE,SibSp,Parch,FARE,EMB)
+        output= classify(COP,USDI,TT,CT,NGP,GDP,NGR,NGC,NGI)
         #st.success()
         st.success(output)
 
@@ -57,9 +57,9 @@ def classify(COP,USDI,TT,CT,NGP,GDP,NGR,NGC,NGI):
     inputs = [[COP,USDI,TT,CT,NGP,GDP,NGR,NGC,NGI]]
 
     from joblib import dump, load
-    log_model = load('AdaBoost_unscaled.joblib')
+    log_model = load('naturalgas.joblib')
     predictionn = round((log_model.predict(inputs)),3)
-    return('Predicted Price:',)
+    return('Predicted Price:',predictionn)
     
 if __name__=='__main__':
     main()
