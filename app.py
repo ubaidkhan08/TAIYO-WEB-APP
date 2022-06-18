@@ -20,11 +20,11 @@ def main():
 
 
     st.subheader('Texas Temperature')
-    TT = st.slider('(In Farnheit)', 0.0, 110.0)
+    TT = st.slider('(In Fahrenheit)', 0.0, 110.0)
 
 
     st.subheader('California Temperature')
-    CT = st.slider('(In Farnheit)', 0.0, 105.0)
+    CT = st.slider('(In Fahrenheit)', 0.0, 105.0)
 
     
     st.subheader('Natural Gas Production in the USA')
