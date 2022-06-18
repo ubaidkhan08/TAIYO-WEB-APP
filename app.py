@@ -16,7 +16,7 @@ def main():
 
 
     st.subheader('US Dollar Index')
-    UDSI = st.number_input('Enter')
+    USDI = st.number_input('Enter')
 
 
     st.subheader('Texas Temperature')
