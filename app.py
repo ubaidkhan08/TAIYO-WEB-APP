@@ -36,13 +36,13 @@ def main():
 
 
     st.subheader('US Natural Gas Reserves')
-    NGR = st.number_input('(in Trillion cubic feet)')
+    NGR = st.number_input('(in Trillion cubic feet)',key=0)
 
     st.subheader('US Natural Gas Consumption')
-    NGC = st.number_input('(in Trillion cubic feet)')
+    NGC = st.number_input('(in Trillion cubic feet)',key=1)
 
     st.subheader('US Natural Gas Imports')
-    NGI = st.number_input('(in Trillion cubic feet)')
+    NGI = st.number_input('(in Trillion cubic feet)',key=2)
     
     if st.button('Predict Natural Gas Price'):
         output= classify(COP,USDI,TT,CT,NGP,GDP,NGR,NGC,NGI)
