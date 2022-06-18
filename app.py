@@ -59,7 +59,8 @@ def classify(COP,USDI,TT,CT,NGP,GDP,NGR,NGC,NGI):
     from joblib import dump, load
     log_model = load('naturalgas_predict.joblib')
     predictionn = ((log_model.predict([inputs[0]])))
-    return('Predicted Price: round(predictionn[0],3)')
+    predictionn = round(predictionn[0],3)
+    return('Predicted Price: predictionn')
     
 if __name__=='__main__':
     main()
