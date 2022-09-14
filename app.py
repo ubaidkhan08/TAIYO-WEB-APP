@@ -1,19 +1,19 @@
-import streamlit as st
+00import streamlit as st
 from joblib import dump, load
 import numpy as np
 import pandas as pd
 
 
 def main():
+    from PIL import Image
+    image = Image.open("A project made for Genpact's interview process.png")
+    st.image(image)
+    
     st.title("Natural Gas Prediction Model for Genpact!")
     html_temp = """
     <div style="background-color:teal ;padding:20px">
     </div>
     """
-
-    from PIL import Image
-    image = Image.open("A project made for Genpact's interview process.png")
-    st.image(image)
     
     st.subheader('Crude Oil Price')
     COP = st.number_input('(in Dollars)')
