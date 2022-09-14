@@ -12,7 +12,7 @@ def main():
     """
 
     from PIL import Image
-    image = Image.open("A project made for Genpact's interview process.png
+    image = Image.open("A project made for Genpact's interview process.png")
     st.image(image)
     
     st.subheader('Crude Oil Price')
