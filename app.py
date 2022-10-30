@@ -5,10 +5,7 @@ import pandas as pd
 
 
 def main():
-    from PIL import Image
-    image = Image.open("LOGO.png")
-    st.image(image)
-    
+   
     st.title("Natural Gas Prediction Model!")
     html_temp = """
     <div style="background-color:teal ;padding:20px">
