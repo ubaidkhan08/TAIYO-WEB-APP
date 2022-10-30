@@ -9,7 +9,7 @@ def main():
     image = Image.open("LOGO.png")
     st.image(image)
     
-    st.title("Natural Gas Prediction Model for Axxela!")
+    st.title("Natural Gas Prediction Model!")
     html_temp = """
     <div style="background-color:teal ;padding:20px">
     </div>
